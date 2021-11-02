@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="design.js">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.home').click(function(){
+                $('.home').fadeOut("normal", function() {
+                    $('.home').remove();
+                    });
+                });
+            });
+        $(document).ready(function(){
+            $(".game").click(function(){
+                $(".menu,#uxui,#graphic,#contact").fadeOut("normal", function(){
+                    $('.menu,#uxui,#graphic,#contact').hide();
+                    $("#game").show();
+                    });
+                });
+        });
+        $(document).ready(function(){
+            $(".uxui").click(function(){
+                $(".menu,#game,#graphic,#contact").fadeOut("normal", function(){
+                    $(".menu,#game,#graphic,#contact").hide();
+                    $("#uxui").show();
+                    });
+                });
+            });
+        $(document).ready(function(){
+            $(".graphic").click(function(){
+                $(".menu,#game,#uxui,#contact").fadeOut("normal", function(){
+                    $(".menu,#game,#uxui,#contact").hide();
+                    $("#graphic").show();
+                    });
+                });
+            });
+        $(document).ready(function(){
+            $(".contact").click(function(){
+                $(".menu,#game,#uxui,#graphic").fadeOut("normal", function(){
+                    $(".menu,#game,#uxui,#graphic").hide();
+                    $("#contact").show();
+                    });
+                });
+            });
+        $(document).ready(function(){
+            $("#back").click(function(){
+                $(".menu,#game,#uxui,#graphic,#contact").fadeIn("normal", function(){
+                    $(".menu,#game,#uxui,#graphic,#contact").show();
+                    });
+                });
+            });
+    </script>
+</head>
+<body>
+    <div class="home">
+        <span class="blink">Game</span>
+        <span class="blink">Start</span>
+        <p class="blink">화면을 클릭하세요</p>
+    </div>
+    <div class="menu">
+        <p class="game">Game Ui Design</p>
+        <p class="uxui">UX/UI Design</p>
+        <p class="graphic">Graphic Design</p>
+        <p class="contact">Contact To</p>
+    </div>
+    <div id="wrap">
+        <div id="game">
+            <h1>Game Ui Design</h1>
+            <div class="one">
+                <p>Example</p>
+            </div>
+            <div class="two">
+                <p>Example</p>
+            </div>
+            <div class="three">
+                <p>Example</p>
+            </div>
+            <i id="back" class="fas fa-arrow-circle-left"></i>
+        </div>
+        <div id="uxui">
+            <h1>UX / UI Design</h1>
+            <div class="one">
+                <p>Example</p>
+            </div>
+            <div class="two">
+                <p>Example</p>
+            </div>
+            <div class="three">
+                <p>Example</p>
+            </div>
+            <i id="back" class="fas fa-arrow-circle-left"></i>
+        </div>
+        <div id="graphic">
+            <h1>Graphic Design</h1>
+            <div class="one">
+                <p>Example</p>
+            </div>
+            <div class="two">
+                <p>Example</p>
+            </div>
+            <div class="three">
+                <p>Example</p>
+            </div>
+            <i id="back" class="fas fa-arrow-circle-left"></i>
+        </div>
+        <div id="contact">
+            <h1>Contact To</h1>
+            <i id="back" class="fas fa-arrow-circle-left"></i>
+        </div>
+    </div>
+    
+</html>

@@ -1,0 +1,217 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    background-image: url(home_bg.png);
+    font-family: 'DungGeunMo';
+    width: 100vw;
+    height: 35vh;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 65vh;
+    cursor: pointer;
+    position: absolute;
+    z-index: 9;
+}
+
+.home span {
+    font-size: 4vw;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-top: -1vh;
+    text-shadow: -7px 0 #000, 0 7px #000, 7px 0 #000, 0 -7px #000;
+}
+
+.home p {
+    font-size: 2vw;
+    color: white;
+    margin-top: 1.5vh;
+    text-shadow: -7px 0 #000, 0 7px #000, 7px 0 #000, 0 -7px #000;
+}
+
+@keyframes blink-effect { 50% { opacity: 0; } }
+
+.blink {animation: blink-effect 1.3s step-end infinite;}
+
+.menu {
+    width: 100vw;
+    height: 92vh;
+    font-family: 'DungGeunMo';
+    font-size: 3.5vw;
+    background-image: url(home_bg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 8vh;
+    position: absolute;
+    z-index: 7;
+}
+
+.menu p {
+    display: inline-block;
+    text-align: left;
+    text-shadow: -7px 0 #000, 0 7px #000, 7px 0 #000, 0 -7px #000;
+    margin-left: 11vw;
+    margin-top: 6vh;
+    margin-right: 50vw;
+    background-color: black;
+    padding: 2.5vh 3vw 3vh 3vw;
+    border-radius: 5vw;
+    border: 5px solid #fff;
+    cursor: pointer;
+}
+
+#game {
+    width: 89vw;
+    height: 92vh;
+    font-family: 'DungGeunMo';
+    font-size: 3.5vw;
+    background-image: url(home_bg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 8vh;
+    position: absolute;
+    z-index: 5;
+    padding-left: 11vw;
+}
+
+#uxui {
+    width: 89vw;
+    height: 92vh;
+    font-family: 'DungGeunMo';
+    font-size: 3.5vw;
+    background-image: url(home_bg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 8vh;
+    position: absolute;
+    z-index: 3;
+    padding-left: 11vw;
+}
+
+#graphic {
+    width: 89vw;
+    height: 92vh;
+    font-family: 'DungGeunMo';
+    font-size: 3.5vw;
+    background-image: url(home_bg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 8vh;
+    position: absolute;
+    z-index: 1;
+    padding-left: 11vw;
+}
+
+#contact {
+    width: 89vw;
+    height: 92vh;
+    font-family: 'DungGeunMo';
+    font-size: 3.5vw;
+    background-image: url(home_bg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 8vh;
+    position: absolute;
+    z-index: 0;
+    padding-left: 11vw;
+}
+
+h1 {
+    font-size: 5.5vw;
+    text-shadow: -7px 0 #000, 0 7px #000, 7px 0 #000, 0 -7px #000;
+    margin-top: 7vh;
+}
+
+.one, .two, .three {
+    width: 20vw;
+    height: 25vh;
+    background-color: black;
+    color: white;
+    float: left;
+    margin-top: 5vh;
+    text-align: center;
+    padding-top: 20vh;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.two {
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+#back {
+    font-size: 4vw;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    float: right;
+    margin-right: 7vw;
+    margin-top: 58vh;
+}
